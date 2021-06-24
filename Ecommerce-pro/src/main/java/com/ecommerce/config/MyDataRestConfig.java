@@ -32,7 +32,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 
 	public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
-        HttpMethod[] theUnsupportedActions = {HttpMethod.PUT,  HttpMethod.DELETE};
+        HttpMethod[] theUnsupportedActions = {HttpMethod.PUT,HttpMethod.POST,  HttpMethod.DELETE};
 
        //HttpMethod.POST,
 
