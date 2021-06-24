@@ -30,12 +30,11 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 		entityManager = theEntityManager;
 	}
 
-	@Override
-    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+	public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
-        HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
+        HttpMethod[] theUnsupportedActions = {HttpMethod.PUT,  HttpMethod.DELETE};
 
-       
+       //HttpMethod.POST,
 
         // disable HTTP methods for ProductCategory: PUT, POST and DELETE
         disableHttpMethods(Product.class,config, theUnsupportedActions);
