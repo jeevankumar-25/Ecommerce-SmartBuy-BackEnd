@@ -11,7 +11,7 @@ import com.ecommerce.Service.CheckoutService;
 import com.ecommerce.dto.Purchase;
 import com.ecommerce.dto.PurchaseResponse;
 
-//@CrossOrigin("http://localhost:4200")
+@CrossOrigin("http://localhost:4200")
 @RestController
 @RequestMapping("/checkout")
 public class CheckoutController {
