@@ -8,5 +8,9 @@ import com.ecommerce.entity.Customer;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
+	
+	Customer findByEmail(String theEmail);
+	
+//	select * from customer c where c.email=theEmail
 
 }
